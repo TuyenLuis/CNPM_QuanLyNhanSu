@@ -68,8 +68,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupPanel3);
             this.splitContainer1.Panel2.Controls.Add(this.groupPanel2);
-            this.splitContainer1.Size = new System.Drawing.Size(609, 322);
-            this.splitContainer1.SplitterDistance = 229;
+            this.splitContainer1.Size = new System.Drawing.Size(800, 319);
+            this.splitContainer1.SplitterDistance = 300;
             this.splitContainer1.TabIndex = 6;
             // 
             // groupPanel1
@@ -82,7 +82,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(229, 322);
+            this.groupPanel1.Size = new System.Drawing.Size(300, 319);
             // 
             // 
             // 
@@ -131,7 +131,7 @@
             this.listViewExDanToc.Location = new System.Drawing.Point(0, 0);
             this.listViewExDanToc.MultiSelect = false;
             this.listViewExDanToc.Name = "listViewExDanToc";
-            this.listViewExDanToc.Size = new System.Drawing.Size(223, 301);
+            this.listViewExDanToc.Size = new System.Drawing.Size(294, 298);
             this.listViewExDanToc.TabIndex = 2;
             this.listViewExDanToc.UseCompatibleStateImageBehavior = false;
             this.listViewExDanToc.View = System.Windows.Forms.View.Details;
@@ -139,12 +139,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Mã TĐTH";
-            this.columnHeader1.Width = 68;
+            this.columnHeader1.Width = 94;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Tên TĐTH";
-            this.columnHeader2.Width = 152;
+            this.columnHeader2.Width = 199;
             // 
             // groupPanel3
             // 
@@ -157,9 +157,9 @@
             this.groupPanel3.Controls.Add(this.itemThemMoi);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupPanel3.Location = new System.Drawing.Point(0, 248);
+            this.groupPanel3.Location = new System.Drawing.Point(0, 245);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(376, 74);
+            this.groupPanel3.Size = new System.Drawing.Size(496, 74);
             // 
             // 
             // 
@@ -194,17 +194,18 @@
             // 
             this.itemThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.itemThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemThoat.Location = new System.Drawing.Point(308, 22);
+            this.itemThoat.Location = new System.Drawing.Point(399, 24);
             this.itemThoat.Name = "itemThoat";
             this.itemThoat.Size = new System.Drawing.Size(56, 26);
             this.itemThoat.TabIndex = 5;
             this.itemThoat.Text = "Thoát";
+            this.itemThoat.Click += new System.EventHandler(this.itemThoat_Click);
             // 
             // itemLuu
             // 
             this.itemLuu.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.itemLuu.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemLuu.Location = new System.Drawing.Point(161, 22);
+            this.itemLuu.Location = new System.Drawing.Point(252, 24);
             this.itemLuu.Name = "itemLuu";
             this.itemLuu.Size = new System.Drawing.Size(59, 26);
             this.itemLuu.TabIndex = 3;
@@ -214,7 +215,7 @@
             // 
             this.itemXoa.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.itemXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemXoa.Location = new System.Drawing.Point(238, 22);
+            this.itemXoa.Location = new System.Drawing.Point(329, 24);
             this.itemXoa.Name = "itemXoa";
             this.itemXoa.Size = new System.Drawing.Size(59, 26);
             this.itemXoa.TabIndex = 4;
@@ -224,7 +225,7 @@
             // 
             this.itemBoQua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.itemBoQua.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemBoQua.Location = new System.Drawing.Point(78, 22);
+            this.itemBoQua.Location = new System.Drawing.Point(169, 24);
             this.itemBoQua.Name = "itemBoQua";
             this.itemBoQua.Size = new System.Drawing.Size(65, 26);
             this.itemBoQua.TabIndex = 1;
@@ -234,7 +235,7 @@
             // 
             this.itemThemMoi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.itemThemMoi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemThemMoi.Location = new System.Drawing.Point(0, 21);
+            this.itemThemMoi.Location = new System.Drawing.Point(91, 23);
             this.itemThemMoi.Name = "itemThemMoi";
             this.itemThemMoi.Size = new System.Drawing.Size(69, 26);
             this.itemThemMoi.TabIndex = 2;
@@ -253,7 +254,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(376, 322);
+            this.groupPanel2.Size = new System.Drawing.Size(496, 319);
             // 
             // 
             // 
@@ -320,7 +321,7 @@
             this.txtTenTDTH.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTenTDTH.Location = new System.Drawing.Point(142, 83);
             this.txtTenTDTH.Name = "txtTenTDTH";
-            this.txtTenTDTH.Size = new System.Drawing.Size(219, 20);
+            this.txtTenTDTH.Size = new System.Drawing.Size(276, 20);
             this.txtTenTDTH.TabIndex = 1;
             // 
             // txtMaTDTH
@@ -333,18 +334,19 @@
             this.txtMaTDTH.Enabled = false;
             this.txtMaTDTH.Location = new System.Drawing.Point(142, 45);
             this.txtMaTDTH.Name = "txtMaTDTH";
-            this.txtMaTDTH.Size = new System.Drawing.Size(219, 20);
+            this.txtMaTDTH.Size = new System.Drawing.Size(276, 20);
             this.txtMaTDTH.TabIndex = 0;
             // 
             // frmTrinhDoTinHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 322);
+            this.ClientSize = new System.Drawing.Size(800, 319);
             this.Controls.Add(this.splitContainer1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTrinhDoTinHoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trình Độ Tin Học";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

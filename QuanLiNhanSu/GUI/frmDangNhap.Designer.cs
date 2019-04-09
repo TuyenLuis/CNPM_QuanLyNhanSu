@@ -98,6 +98,7 @@
             this.btThoat.Size = new System.Drawing.Size(75, 23);
             this.btThoat.TabIndex = 5;
             this.btThoat.Text = "Đóng";
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btDongY
             // 
@@ -178,7 +179,6 @@
             this.txtMATKHAU.PasswordChar = '*';
             this.txtMATKHAU.Size = new System.Drawing.Size(242, 20);
             this.txtMATKHAU.TabIndex = 1;
-            this.txtMATKHAU.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTAIKHOAN
             // 
@@ -189,7 +189,6 @@
             this.txtTAIKHOAN.Name = "txtTAIKHOAN";
             this.txtTAIKHOAN.Size = new System.Drawing.Size(242, 20);
             this.txtTAIKHOAN.TabIndex = 0;
-            this.txtTAIKHOAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
@@ -266,6 +265,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);

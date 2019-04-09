@@ -17,5 +17,10 @@ namespace QuanLiNhanSu.GUI
         {
             InitializeComponent();
         }
+
+        private void itemThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

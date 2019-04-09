@@ -217,6 +217,7 @@
             this.itemThoat.Size = new System.Drawing.Size(56, 26);
             this.itemThoat.TabIndex = 5;
             this.itemThoat.Text = "Thoát";
+            this.itemThoat.Click += new System.EventHandler(this.itemThoat_Click);
             // 
             // itemLuu
             // 
@@ -408,6 +409,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmHeSoLuong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hệ Số Lương Nhân Viên";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

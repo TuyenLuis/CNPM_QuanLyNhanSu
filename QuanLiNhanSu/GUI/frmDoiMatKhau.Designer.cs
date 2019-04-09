@@ -249,6 +249,7 @@
             this.btThoat.Size = new System.Drawing.Size(75, 28);
             this.btThoat.TabIndex = 9;
             this.btThoat.Text = "Thoát";
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // groupPanel2
             // 
@@ -322,6 +323,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDoiMatKhau";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDoiMatKhau";
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);

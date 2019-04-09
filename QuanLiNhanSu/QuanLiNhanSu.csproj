@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
     <Compile Include="GUI\frmBac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,11 +134,47 @@
     <Compile Include="GUI\frmTrinhDoTinHoc.Designer.cs">
       <DependentUpon>frmTrinhDoTinHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_ChiTietLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_ChiTietLuong.Designer.cs">
+      <DependentUpon>frm_ChiTietLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucListNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucListNhanVien.Designer.cs">
+      <DependentUpon>ucListNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucLuongNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucLuongNhanVien.Designer.cs">
+      <DependentUpon>ucLuongNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucNguoiDung.Designer.cs">
+      <DependentUpon>ucNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucPhongBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucPhongBan.Designer.cs">
+      <DependentUpon>ucPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucTraCuuNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucTraCuuNhanVien.Designer.cs">
+      <DependentUpon>ucTraCuuNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -183,8 +220,26 @@
     <EmbeddedResource Include="GUI\frmTrinhDoTinHoc.resx">
       <DependentUpon>frmTrinhDoTinHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_ChiTietLuong.resx">
+      <DependentUpon>frm_ChiTietLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucListNhanVien.resx">
+      <DependentUpon>ucListNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucLuongNhanVien.resx">
+      <DependentUpon>ucLuongNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucNguoiDung.resx">
+      <DependentUpon>ucNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucPhongBan.resx">
+      <DependentUpon>ucPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucTraCuuNhanVien.resx">
+      <DependentUpon>ucTraCuuNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -194,6 +249,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -207,6 +263,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\965-plugins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\72b7d6aa5cf1e9bb3be3c78e82e898d0_3_buoc_trien_khai_thanh_cong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Phan-mem-nhan-su-tien-luong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tpdkdesign.net-Refresh-Cl-Windows-View-Detail.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
