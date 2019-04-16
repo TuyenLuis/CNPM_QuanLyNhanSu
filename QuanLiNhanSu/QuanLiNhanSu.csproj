@@ -56,6 +56,12 @@
     <Compile Include="GUI\frmBac.Designer.cs">
       <DependentUpon>frmBac.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmChiTietNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChiTietNhanVien.Designer.cs">
+      <DependentUpon>frmChiTietNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,18 @@
     <Compile Include="GUI\frmHeSoLuong.Designer.cs">
       <DependentUpon>frmHeSoLuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmKhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmKhenThuong.Designer.cs">
+      <DependentUpon>frmKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmKiLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmKiLuat.Designer.cs">
+      <DependentUpon>frmKiLuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmListNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +116,12 @@
     <Compile Include="GUI\frmNgach.Designer.cs">
       <DependentUpon>frmNgach.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmNghiViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNghiViec.Designer.cs">
+      <DependentUpon>frmNghiViec.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmNguoiDung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +133,12 @@
     </Compile>
     <Compile Include="GUI\frmPhongBan.Designer.cs">
       <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQuanHeGiaDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQuanHeGiaDinh.Designer.cs">
+      <DependentUpon>frmQuanHeGiaDinh.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmTraCuuNhanVien.cs">
       <SubType>Form</SubType>
@@ -134,11 +164,11 @@
     <Compile Include="GUI\frmTrinhDoTinHoc.Designer.cs">
       <DependentUpon>frmTrinhDoTinHoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frm_ChiTietLuong.cs">
+    <Compile Include="GUI\frmChiTietLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frm_ChiTietLuong.Designer.cs">
-      <DependentUpon>frm_ChiTietLuong.cs</DependentUpon>
+    <Compile Include="GUI\frmChiTietLuong.Designer.cs">
+      <DependentUpon>frmChiTietLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_Main.cs">
       <SubType>Form</SubType>
@@ -181,6 +211,9 @@
     <EmbeddedResource Include="GUI\frmBac.resx">
       <DependentUpon>frmBac.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChiTietNhanVien.resx">
+      <DependentUpon>frmChiTietNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmChucVu.resx">
       <DependentUpon>frmChucVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +226,12 @@
     <EmbeddedResource Include="GUI\frmHeSoLuong.resx">
       <DependentUpon>frmHeSoLuong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmKhenThuong.resx">
+      <DependentUpon>frmKhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmKiLuat.resx">
+      <DependentUpon>frmKiLuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmListNhanVien.resx">
       <DependentUpon>frmListNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,11 +241,17 @@
     <EmbeddedResource Include="GUI\frmNgach.resx">
       <DependentUpon>frmNgach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNghiViec.resx">
+      <DependentUpon>frmNghiViec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNguoiDung.resx">
       <DependentUpon>frmNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmPhongBan.resx">
       <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQuanHeGiaDinh.resx">
+      <DependentUpon>frmQuanHeGiaDinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTraCuuNhanVien.resx">
       <DependentUpon>frmTraCuuNhanVien.cs</DependentUpon>
@@ -220,8 +265,8 @@
     <EmbeddedResource Include="GUI\frmTrinhDoTinHoc.resx">
       <DependentUpon>frmTrinhDoTinHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_ChiTietLuong.resx">
-      <DependentUpon>frm_ChiTietLuong.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmChiTietLuong.resx">
+      <DependentUpon>frmChiTietLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>

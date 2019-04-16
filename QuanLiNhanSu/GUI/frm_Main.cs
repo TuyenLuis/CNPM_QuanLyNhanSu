@@ -74,12 +74,12 @@ namespace QuanLiNhanSu.GUI
             ribbonTabItemTimKiemThongKe.Enabled = false;
             ribbonTabItemTroGiup.Enabled = false;
 
-            buttonItemTopChuyenSangTaiKhoanKhac.Enabled = false;
-            buttonItemTopDoiMatKhau.Enabled = false;
-            buttonItemTopPhanQuyenNguoiDung.Enabled = false;
-            buttonItemTopHoSoNhanVien.Enabled = false;
-            buttonItemTopDanhSachPhongBan.Enabled = false;
-            buttonItemTopDanhSachDanhMuc.Enabled = false;
+            btnItemChuyenSangTaiKhoanKhac.Enabled = false;
+            btnItemDoiMatKhau.Enabled = false;
+            btnItemPhanQuyenNguoiDung.Enabled = false;
+            btnItemHoSoNhanVien.Enabled = false;
+            btnItemDanhSachPhongBan.Enabled = false;
+            btnItemDanhSachDanhMuc.Enabled = false;
             buttonItemTopBangLuongNhanVien.Enabled = false;
             buttonItemTopNgach.Enabled = false;
             buttonItemTopBac.Enabled = false;

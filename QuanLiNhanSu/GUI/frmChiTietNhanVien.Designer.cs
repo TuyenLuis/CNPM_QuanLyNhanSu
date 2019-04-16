@@ -34,8 +34,8 @@
             this.picHinhAnh = new System.Windows.Forms.PictureBox();
             this.radNu = new System.Windows.Forms.RadioButton();
             this.radNam = new System.Windows.Forms.RadioButton();
-            this.dtNgayCapCMND = new System.Windows.Forms.DateTimePicker();
-            this.dtNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayCapCMND = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txtCMND = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtHoTen = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtNoiSinh = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -49,8 +49,8 @@
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.linkXoaHinh = new System.Windows.Forms.LinkLabel();
-            this.linkChenHinh = new System.Windows.Forms.LinkLabel();
+            this.linkXoaAnh = new System.Windows.Forms.LinkLabel();
+            this.linkChonAnh = new System.Windows.Forms.LinkLabel();
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.labelX50 = new DevComponents.DotNetBar.LabelX();
@@ -135,13 +135,7 @@
             this.labelX36 = new DevComponents.DotNetBar.LabelX();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabItem5 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabItem4 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabControl1 = new DevComponents.DotNetBar.TabControl();
+            this.tabControl = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.txtEmail = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtDChiThuongTru = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -185,6 +179,12 @@
             this.labelX94 = new DevComponents.DotNetBar.LabelX();
             this.labelX97 = new DevComponents.DotNetBar.LabelX();
             this.tabItem9 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem5 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem4 = new DevComponents.DotNetBar.TabItem(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -197,10 +197,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.linkHopDongLaoDong_ThoiViec = new System.Windows.Forms.LinkLabel();
-            this.link_QuaTrinhHuongLuong = new System.Windows.Forms.LinkLabel();
-            this.link_QuaTrinhKhenThuong = new System.Windows.Forms.LinkLabel();
+            this.linkQuaTrinhHuongLuong = new System.Windows.Forms.LinkLabel();
+            this.linkQuaTrinhKhenThuong = new System.Windows.Forms.LinkLabel();
             this.linkQuaTrinhKyLuat = new System.Windows.Forms.LinkLabel();
-            this.linkQuanHeGiaDinh = new System.Windows.Forms.LinkLabel();
+            this.c = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
             this.tabControlPanel2.SuspendLayout();
@@ -211,8 +211,8 @@
             this.tabControlPanel3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl)).BeginInit();
+            this.tabControl.SuspendLayout();
             this.tabControlPanel1.SuspendLayout();
             this.tabControlPanel4.SuspendLayout();
             this.tabControlPanel5.SuspendLayout();
@@ -229,8 +229,8 @@
             this.panel1.Controls.Add(this.picHinhAnh);
             this.panel1.Controls.Add(this.radNu);
             this.panel1.Controls.Add(this.radNam);
-            this.panel1.Controls.Add(this.dtNgayCapCMND);
-            this.panel1.Controls.Add(this.dtNgaySinh);
+            this.panel1.Controls.Add(this.dtpNgayCapCMND);
+            this.panel1.Controls.Add(this.dtpNgaySinh);
             this.panel1.Controls.Add(this.txtCMND);
             this.panel1.Controls.Add(this.txtHoTen);
             this.panel1.Controls.Add(this.txtNoiSinh);
@@ -244,8 +244,8 @@
             this.panel1.Controls.Add(this.labelX4);
             this.panel1.Controls.Add(this.labelX2);
             this.panel1.Controls.Add(this.labelX1);
-            this.panel1.Controls.Add(this.linkXoaHinh);
-            this.panel1.Controls.Add(this.linkChenHinh);
+            this.panel1.Controls.Add(this.linkXoaAnh);
+            this.panel1.Controls.Add(this.linkChonAnh);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -288,23 +288,23 @@
             this.radNam.Text = "Nam";
             this.radNam.UseVisualStyleBackColor = true;
             // 
-            // dtNgayCapCMND
+            // dtpNgayCapCMND
             // 
-            this.dtNgayCapCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtNgayCapCMND.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtNgayCapCMND.Location = new System.Drawing.Point(392, 74);
-            this.dtNgayCapCMND.Name = "dtNgayCapCMND";
-            this.dtNgayCapCMND.Size = new System.Drawing.Size(135, 20);
-            this.dtNgayCapCMND.TabIndex = 64;
+            this.dtpNgayCapCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayCapCMND.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayCapCMND.Location = new System.Drawing.Point(392, 74);
+            this.dtpNgayCapCMND.Name = "dtpNgayCapCMND";
+            this.dtpNgayCapCMND.Size = new System.Drawing.Size(135, 20);
+            this.dtpNgayCapCMND.TabIndex = 64;
             // 
-            // dtNgaySinh
+            // dtpNgaySinh
             // 
-            this.dtNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtNgaySinh.Location = new System.Drawing.Point(392, 47);
-            this.dtNgaySinh.Name = "dtNgaySinh";
-            this.dtNgaySinh.Size = new System.Drawing.Size(135, 20);
-            this.dtNgaySinh.TabIndex = 63;
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(392, 47);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(135, 20);
+            this.dtpNgaySinh.TabIndex = 63;
             // 
             // txtCMND
             // 
@@ -487,27 +487,27 @@
             this.labelX1.TabIndex = 48;
             this.labelX1.Text = "Mã NV";
             // 
-            // linkXoaHinh
+            // linkXoaAnh
             // 
-            this.linkXoaHinh.AutoSize = true;
-            this.linkXoaHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkXoaHinh.Location = new System.Drawing.Point(80, 98);
-            this.linkXoaHinh.Name = "linkXoaHinh";
-            this.linkXoaHinh.Size = new System.Drawing.Size(55, 13);
-            this.linkXoaHinh.TabIndex = 47;
-            this.linkXoaHinh.TabStop = true;
-            this.linkXoaHinh.Text = "Xóa Ảnh";
+            this.linkXoaAnh.AutoSize = true;
+            this.linkXoaAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkXoaAnh.Location = new System.Drawing.Point(80, 98);
+            this.linkXoaAnh.Name = "linkXoaAnh";
+            this.linkXoaAnh.Size = new System.Drawing.Size(55, 13);
+            this.linkXoaAnh.TabIndex = 47;
+            this.linkXoaAnh.TabStop = true;
+            this.linkXoaAnh.Text = "Xóa Ảnh";
             // 
-            // linkChenHinh
+            // linkChonAnh
             // 
-            this.linkChenHinh.AutoSize = true;
-            this.linkChenHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkChenHinh.Location = new System.Drawing.Point(12, 98);
-            this.linkChenHinh.Name = "linkChenHinh";
-            this.linkChenHinh.Size = new System.Drawing.Size(62, 13);
-            this.linkChenHinh.TabIndex = 46;
-            this.linkChenHinh.TabStop = true;
-            this.linkChenHinh.Text = "Chọn Ảnh";
+            this.linkChonAnh.AutoSize = true;
+            this.linkChonAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkChonAnh.Location = new System.Drawing.Point(12, 98);
+            this.linkChonAnh.Name = "linkChonAnh";
+            this.linkChonAnh.Size = new System.Drawing.Size(62, 13);
+            this.linkChonAnh.TabIndex = 46;
+            this.linkChonAnh.TabStop = true;
+            this.linkChonAnh.Text = "Chọn Ảnh";
             // 
             // tabControlPanel2
             // 
@@ -1575,68 +1575,32 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.tabControl1);
+            this.panel6.Controls.Add(this.tabControl);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1075, 227);
             this.panel6.TabIndex = 0;
             // 
-            // tabItem3
+            // tabControl
             // 
-            this.tabItem3.Image = ((System.Drawing.Image)(resources.GetObject("tabItem3.Image")));
-            this.tabItem3.Name = "tabItem3";
-            this.tabItem3.Text = "3. Trình Độ Chuyên Môn";
-            // 
-            // tabItem2
-            // 
-            this.tabItem2.Image = ((System.Drawing.Image)(resources.GetObject("tabItem2.Image")));
-            this.tabItem2.Name = "tabItem2";
-            this.tabItem2.Text = "2. Tuyển Dụng";
-            // 
-            // tabItem1
-            // 
-            this.tabItem1.Image = ((System.Drawing.Image)(resources.GetObject("tabItem1.Image")));
-            this.tabItem1.Name = "tabItem1";
-            this.tabItem1.Text = "1. Thông Tin Cá Nhân";
-            // 
-            // tabItem5
-            // 
-            this.tabItem5.Image = ((System.Drawing.Image)(resources.GetObject("tabItem5.Image")));
-            this.tabItem5.Name = "tabItem5";
-            this.tabItem5.Text = "3. Trình Độ Chuyên Môn";
-            // 
-            // tabItem6
-            // 
-            this.tabItem6.Image = ((System.Drawing.Image)(resources.GetObject("tabItem6.Image")));
-            this.tabItem6.Name = "tabItem6";
-            this.tabItem6.Text = "2. Tuyển Dụng - Đoàn - Đảng";
-            // 
-            // tabItem4
-            // 
-            this.tabItem4.Image = ((System.Drawing.Image)(resources.GetObject("tabItem4.Image")));
-            this.tabItem4.Name = "tabItem4";
-            this.tabItem4.Text = "1. Thông Tin Cá Nhân";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.Controls.Add(this.tabControlPanel4);
-            this.tabControl1.Controls.Add(this.tabControlPanel5);
-            this.tabControl1.Controls.Add(this.tabControlPanel1);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.SelectedTabIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1075, 227);
-            this.tabControl1.TabIndex = 11;
-            this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
-            this.tabControl1.Tabs.Add(this.tabItem7);
-            this.tabControl1.Tabs.Add(this.tabItem9);
-            this.tabControl1.Tabs.Add(this.tabItem8);
-            this.tabControl1.Text = "tabControl1";
+            this.tabControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.tabControl.CanReorderTabs = true;
+            this.tabControl.Controls.Add(this.tabControlPanel4);
+            this.tabControl.Controls.Add(this.tabControlPanel1);
+            this.tabControl.Controls.Add(this.tabControlPanel5);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabControl.SelectedTabIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1075, 227);
+            this.tabControl.TabIndex = 11;
+            this.tabControl.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
+            this.tabControl.Tabs.Add(this.tabItem7);
+            this.tabControl.Tabs.Add(this.tabItem9);
+            this.tabControl.Tabs.Add(this.tabItem8);
+            this.tabControl.Text = "tabControl1";
             // 
             // tabControlPanel1
             // 
@@ -1937,9 +1901,9 @@
             // 
             this.textBoxX4.Border.Class = "TextBoxBorder";
             this.textBoxX4.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX4.Location = new System.Drawing.Point(479, 29);
+            this.textBoxX4.Location = new System.Drawing.Point(485, 29);
             this.textBoxX4.Name = "textBoxX4";
-            this.textBoxX4.Size = new System.Drawing.Size(297, 20);
+            this.textBoxX4.Size = new System.Drawing.Size(291, 20);
             this.textBoxX4.TabIndex = 121;
             // 
             // textBoxX9
@@ -1949,9 +1913,9 @@
             // 
             this.textBoxX9.Border.Class = "TextBoxBorder";
             this.textBoxX9.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX9.Location = new System.Drawing.Point(126, 102);
+            this.textBoxX9.Location = new System.Drawing.Point(129, 102);
             this.textBoxX9.Name = "textBoxX9";
-            this.textBoxX9.Size = new System.Drawing.Size(246, 20);
+            this.textBoxX9.Size = new System.Drawing.Size(243, 20);
             this.textBoxX9.TabIndex = 116;
             // 
             // comboBoxEx2
@@ -1960,7 +1924,7 @@
             this.comboBoxEx2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBoxEx2.FormattingEnabled = true;
             this.comboBoxEx2.ItemHeight = 14;
-            this.comboBoxEx2.Location = new System.Drawing.Point(485, 72);
+            this.comboBoxEx2.Location = new System.Drawing.Point(485, 67);
             this.comboBoxEx2.Name = "comboBoxEx2";
             this.comboBoxEx2.Size = new System.Drawing.Size(291, 20);
             this.comboBoxEx2.TabIndex = 113;
@@ -1982,9 +1946,9 @@
             this.comboBoxEx4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBoxEx4.FormattingEnabled = true;
             this.comboBoxEx4.ItemHeight = 14;
-            this.comboBoxEx4.Location = new System.Drawing.Point(125, 72);
+            this.comboBoxEx4.Location = new System.Drawing.Point(129, 67);
             this.comboBoxEx4.Name = "comboBoxEx4";
-            this.comboBoxEx4.Size = new System.Drawing.Size(247, 20);
+            this.comboBoxEx4.Size = new System.Drawing.Size(243, 20);
             this.comboBoxEx4.TabIndex = 111;
             // 
             // comboBoxEx5
@@ -2006,7 +1970,7 @@
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelX3.Location = new System.Drawing.Point(389, 69);
+            this.labelX3.Location = new System.Drawing.Point(389, 64);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(75, 23);
             this.labelX3.TabIndex = 108;
@@ -2048,7 +2012,7 @@
             // 
             this.labelX41.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX41.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelX41.Location = new System.Drawing.Point(18, 69);
+            this.labelX41.Location = new System.Drawing.Point(18, 64);
             this.labelX41.Name = "labelX41";
             this.labelX41.Size = new System.Drawing.Size(91, 23);
             this.labelX41.TabIndex = 105;
@@ -2237,6 +2201,42 @@
             this.tabItem9.Name = "tabItem9";
             this.tabItem9.Text = "2. Tuyển Dụng";
             // 
+            // tabItem3
+            // 
+            this.tabItem3.Image = ((System.Drawing.Image)(resources.GetObject("tabItem3.Image")));
+            this.tabItem3.Name = "tabItem3";
+            this.tabItem3.Text = "3. Trình Độ Chuyên Môn";
+            // 
+            // tabItem2
+            // 
+            this.tabItem2.Image = ((System.Drawing.Image)(resources.GetObject("tabItem2.Image")));
+            this.tabItem2.Name = "tabItem2";
+            this.tabItem2.Text = "2. Tuyển Dụng";
+            // 
+            // tabItem1
+            // 
+            this.tabItem1.Image = ((System.Drawing.Image)(resources.GetObject("tabItem1.Image")));
+            this.tabItem1.Name = "tabItem1";
+            this.tabItem1.Text = "1. Thông Tin Cá Nhân";
+            // 
+            // tabItem5
+            // 
+            this.tabItem5.Image = ((System.Drawing.Image)(resources.GetObject("tabItem5.Image")));
+            this.tabItem5.Name = "tabItem5";
+            this.tabItem5.Text = "3. Trình Độ Chuyên Môn";
+            // 
+            // tabItem6
+            // 
+            this.tabItem6.Image = ((System.Drawing.Image)(resources.GetObject("tabItem6.Image")));
+            this.tabItem6.Name = "tabItem6";
+            this.tabItem6.Text = "2. Tuyển Dụng - Đoàn - Đảng";
+            // 
+            // tabItem4
+            // 
+            this.tabItem4.Image = ((System.Drawing.Image)(resources.GetObject("tabItem4.Image")));
+            this.tabItem4.Name = "tabItem4";
+            this.tabItem4.Text = "1. Thông Tin Cá Nhân";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel7);
@@ -2380,10 +2380,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.linkHopDongLaoDong_ThoiViec);
-            this.panel5.Controls.Add(this.link_QuaTrinhHuongLuong);
-            this.panel5.Controls.Add(this.link_QuaTrinhKhenThuong);
+            this.panel5.Controls.Add(this.linkQuaTrinhHuongLuong);
+            this.panel5.Controls.Add(this.linkQuaTrinhKhenThuong);
             this.panel5.Controls.Add(this.linkQuaTrinhKyLuat);
-            this.panel5.Controls.Add(this.linkQuanHeGiaDinh);
+            this.panel5.Controls.Add(this.c);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
@@ -2401,27 +2401,27 @@
             this.linkHopDongLaoDong_ThoiViec.TabStop = true;
             this.linkHopDongLaoDong_ThoiViec.Text = "Hợp Đồng Lao Động";
             // 
-            // link_QuaTrinhHuongLuong
+            // linkQuaTrinhHuongLuong
             // 
-            this.link_QuaTrinhHuongLuong.AutoSize = true;
-            this.link_QuaTrinhHuongLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_QuaTrinhHuongLuong.Location = new System.Drawing.Point(30, 5);
-            this.link_QuaTrinhHuongLuong.Name = "link_QuaTrinhHuongLuong";
-            this.link_QuaTrinhHuongLuong.Size = new System.Drawing.Size(133, 13);
-            this.link_QuaTrinhHuongLuong.TabIndex = 30;
-            this.link_QuaTrinhHuongLuong.TabStop = true;
-            this.link_QuaTrinhHuongLuong.Text = "Quá trình hưởng lương";
+            this.linkQuaTrinhHuongLuong.AutoSize = true;
+            this.linkQuaTrinhHuongLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkQuaTrinhHuongLuong.Location = new System.Drawing.Point(30, 5);
+            this.linkQuaTrinhHuongLuong.Name = "linkQuaTrinhHuongLuong";
+            this.linkQuaTrinhHuongLuong.Size = new System.Drawing.Size(133, 13);
+            this.linkQuaTrinhHuongLuong.TabIndex = 30;
+            this.linkQuaTrinhHuongLuong.TabStop = true;
+            this.linkQuaTrinhHuongLuong.Text = "Quá trình hưởng lương";
             // 
-            // link_QuaTrinhKhenThuong
+            // linkQuaTrinhKhenThuong
             // 
-            this.link_QuaTrinhKhenThuong.AutoSize = true;
-            this.link_QuaTrinhKhenThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_QuaTrinhKhenThuong.Location = new System.Drawing.Point(360, 5);
-            this.link_QuaTrinhKhenThuong.Name = "link_QuaTrinhKhenThuong";
-            this.link_QuaTrinhKhenThuong.Size = new System.Drawing.Size(134, 13);
-            this.link_QuaTrinhKhenThuong.TabIndex = 26;
-            this.link_QuaTrinhKhenThuong.TabStop = true;
-            this.link_QuaTrinhKhenThuong.Text = "Quá trình khen thưởng";
+            this.linkQuaTrinhKhenThuong.AutoSize = true;
+            this.linkQuaTrinhKhenThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkQuaTrinhKhenThuong.Location = new System.Drawing.Point(360, 5);
+            this.linkQuaTrinhKhenThuong.Name = "linkQuaTrinhKhenThuong";
+            this.linkQuaTrinhKhenThuong.Size = new System.Drawing.Size(134, 13);
+            this.linkQuaTrinhKhenThuong.TabIndex = 26;
+            this.linkQuaTrinhKhenThuong.TabStop = true;
+            this.linkQuaTrinhKhenThuong.Text = "Quá trình khen thưởng";
             // 
             // linkQuaTrinhKyLuat
             // 
@@ -2434,16 +2434,16 @@
             this.linkQuaTrinhKyLuat.TabStop = true;
             this.linkQuaTrinhKyLuat.Text = "Quá trình kỷ luật";
             // 
-            // linkQuanHeGiaDinh
+            // c
             // 
-            this.linkQuanHeGiaDinh.AutoSize = true;
-            this.linkQuanHeGiaDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkQuanHeGiaDinh.Location = new System.Drawing.Point(194, 5);
-            this.linkQuanHeGiaDinh.Name = "linkQuanHeGiaDinh";
-            this.linkQuanHeGiaDinh.Size = new System.Drawing.Size(105, 13);
-            this.linkQuanHeGiaDinh.TabIndex = 23;
-            this.linkQuanHeGiaDinh.TabStop = true;
-            this.linkQuanHeGiaDinh.Text = "Quan hệ gia đình";
+            this.c.AutoSize = true;
+            this.c.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c.Location = new System.Drawing.Point(194, 5);
+            this.c.Name = "c";
+            this.c.Size = new System.Drawing.Size(105, 13);
+            this.c.TabIndex = 23;
+            this.c.TabStop = true;
+            this.c.Text = "Quan hệ gia đình";
             // 
             // frmChiTietNhanVien
             // 
@@ -2469,8 +2469,8 @@
             this.tabControlPanel3.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl)).EndInit();
+            this.tabControl.ResumeLayout(false);
             this.tabControlPanel1.ResumeLayout(false);
             this.tabControlPanel4.ResumeLayout(false);
             this.tabControlPanel5.ResumeLayout(false);
@@ -2491,8 +2491,8 @@
         private System.Windows.Forms.PictureBox picHinhAnh;
         private System.Windows.Forms.RadioButton radNu;
         private System.Windows.Forms.RadioButton radNam;
-        private System.Windows.Forms.DateTimePicker dtNgayCapCMND;
-        private System.Windows.Forms.DateTimePicker dtNgaySinh;
+        private System.Windows.Forms.DateTimePicker dtpNgayCapCMND;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private DevComponents.DotNetBar.Controls.TextBoxX txtCMND;
         private DevComponents.DotNetBar.Controls.TextBoxX txtHoTen;
         private DevComponents.DotNetBar.Controls.TextBoxX txtNoiSinh;
@@ -2506,8 +2506,8 @@
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private System.Windows.Forms.LinkLabel linkXoaHinh;
-        private System.Windows.Forms.LinkLabel linkChenHinh;
+        private System.Windows.Forms.LinkLabel linkXoaAnh;
+        private System.Windows.Forms.LinkLabel linkChonAnh;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel2;
         private System.Windows.Forms.GroupBox groupBox4;
         private DevComponents.DotNetBar.LabelX labelX50;
@@ -2595,7 +2595,7 @@
         private DevComponents.DotNetBar.TabItem tabItem3;
         private DevComponents.DotNetBar.TabItem tabItem2;
         private DevComponents.DotNetBar.TabItem tabItem1;
-        private DevComponents.DotNetBar.TabControl tabControl1;
+        private DevComponents.DotNetBar.TabControl tabControl;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel4;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX4;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX9;
@@ -2654,9 +2654,9 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.LinkLabel linkHopDongLaoDong_ThoiViec;
-        private System.Windows.Forms.LinkLabel link_QuaTrinhHuongLuong;
-        private System.Windows.Forms.LinkLabel link_QuaTrinhKhenThuong;
+        private System.Windows.Forms.LinkLabel linkQuaTrinhHuongLuong;
+        private System.Windows.Forms.LinkLabel linkQuaTrinhKhenThuong;
         private System.Windows.Forms.LinkLabel linkQuaTrinhKyLuat;
-        private System.Windows.Forms.LinkLabel linkQuanHeGiaDinh;
+        private System.Windows.Forms.LinkLabel c;
     }
 }

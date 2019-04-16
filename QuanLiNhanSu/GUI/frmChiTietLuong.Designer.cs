@@ -1,6 +1,6 @@
 ﻿namespace QuanLiNhanSu.GUI
 {
-    partial class frm_ChiTietLuong
+    partial class frmChiTietLuong
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,8 @@
             this.itemBoQua = new DevComponents.DotNetBar.ButtonX();
             this.itemThemMoi = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.labelX11 = new DevComponents.DotNetBar.LabelX();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.check3nam = new System.Windows.Forms.CheckBox();
             this.check2nam = new System.Windows.Forms.CheckBox();
@@ -58,10 +60,13 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dbLuong = new DevComponents.Editors.DoubleInput();
             this.dbGiaoVien = new DevComponents.Editors.DoubleInput();
             this.dbHSPCCV = new DevComponents.Editors.DoubleInput();
-            this.dbLuongCoBan = new DevComponents.Editors.DoubleInput();
+            this.dbiLuongCoBan = new DevComponents.Editors.DoubleInput();
             this.checkGiaoVien = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.labelX14 = new DevComponents.DotNetBar.LabelX();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
@@ -77,14 +82,9 @@
             this.txtMaLuong = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.labelX11 = new DevComponents.DotNetBar.LabelX();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.panel.SuspendLayout();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -96,7 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGiaoVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbHSPCCV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbLuongCoBan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbiLuongCoBan)).BeginInit();
             this.SuspendLayout();
             // 
             // panel
@@ -278,7 +278,7 @@
             this.groupPanel2.Controls.Add(this.dbLuong);
             this.groupPanel2.Controls.Add(this.dbGiaoVien);
             this.groupPanel2.Controls.Add(this.dbHSPCCV);
-            this.groupPanel2.Controls.Add(this.dbLuongCoBan);
+            this.groupPanel2.Controls.Add(this.dbiLuongCoBan);
             this.groupPanel2.Controls.Add(this.checkGiaoVien);
             this.groupPanel2.Controls.Add(this.labelX14);
             this.groupPanel2.Controls.Add(this.labelX10);
@@ -332,6 +332,28 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 0;
             this.groupPanel2.Text = "Thông Tin";
+            // 
+            // labelX11
+            // 
+            this.labelX11.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX11.Location = new System.Drawing.Point(579, 158);
+            this.labelX11.Name = "labelX11";
+            this.labelX11.Size = new System.Drawing.Size(88, 23);
+            this.labelX11.TabIndex = 85;
+            this.labelX11.Text = "Ngày lĩnh lương";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(679, 162);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(103, 20);
+            this.dateTimePicker1.TabIndex = 84;
             // 
             // groupBox1
             // 
@@ -530,6 +552,18 @@
             this.columnHeader10.Text = "Phụ phí";
             this.columnHeader10.Width = 170;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Ngày nhận lương";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Lương";
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Thực lãnh";
+            // 
             // dbLuong
             // 
             // 
@@ -578,19 +612,19 @@
             this.dbHSPCCV.Size = new System.Drawing.Size(150, 20);
             this.dbHSPCCV.TabIndex = 10;
             // 
-            // dbLuongCoBan
+            // dbiLuongCoBan
             // 
             // 
             // 
             // 
-            this.dbLuongCoBan.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dbLuongCoBan.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dbLuongCoBan.Increment = 1D;
-            this.dbLuongCoBan.Location = new System.Drawing.Point(679, 72);
-            this.dbLuongCoBan.Name = "dbLuongCoBan";
-            this.dbLuongCoBan.ShowUpDown = true;
-            this.dbLuongCoBan.Size = new System.Drawing.Size(105, 20);
-            this.dbLuongCoBan.TabIndex = 4;
+            this.dbiLuongCoBan.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dbiLuongCoBan.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dbiLuongCoBan.Increment = 1D;
+            this.dbiLuongCoBan.Location = new System.Drawing.Point(679, 72);
+            this.dbiLuongCoBan.Name = "dbiLuongCoBan";
+            this.dbiLuongCoBan.ShowUpDown = true;
+            this.dbiLuongCoBan.Size = new System.Drawing.Size(105, 20);
+            this.dbiLuongCoBan.TabIndex = 4;
             // 
             // checkGiaoVien
             // 
@@ -782,18 +816,18 @@
             this.labelX3.TabIndex = 2;
             this.labelX3.Text = "Mốc Tính Lương<br/> Lần Sau:";
             // 
-            // labelX1
+            // labelX4
             // 
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            this.labelX4.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(15, 31);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(74, 23);
-            this.labelX1.TabIndex = 0;
-            this.labelX1.Text = "Mã Lương:";
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Location = new System.Drawing.Point(115, 2);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(74, 23);
+            this.labelX4.TabIndex = 0;
+            this.labelX4.Text = "Nguyễn Văn A";
             // 
             // labelX2
             // 
@@ -808,54 +842,20 @@
             this.labelX2.TabIndex = 0;
             this.labelX2.Text = "Nhân viên:";
             // 
-            // labelX4
+            // labelX1
             // 
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Location = new System.Drawing.Point(115, 2);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(74, 23);
-            this.labelX4.TabIndex = 0;
-            this.labelX4.Text = "Nguyễn Văn A";
-            // 
-            // labelX11
-            // 
-            this.labelX11.BackColor = System.Drawing.Color.Transparent;
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
-            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX11.Location = new System.Drawing.Point(579, 158);
-            this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(88, 23);
-            this.labelX11.TabIndex = 85;
-            this.labelX11.Text = "Ngày lĩnh lương";
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Location = new System.Drawing.Point(15, 31);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(74, 23);
+            this.labelX1.TabIndex = 0;
+            this.labelX1.Text = "Mã Lương:";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(679, 162);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(103, 20);
-            this.dateTimePicker1.TabIndex = 84;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Ngày nhận lương";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Lương";
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Thực lãnh";
-            // 
-            // frm_ChiTietLuong
+            // frmChiTietLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -863,7 +863,7 @@
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.panel);
             this.DoubleBuffered = true;
-            this.Name = "frm_ChiTietLuong";
+            this.Name = "frmChiTietLuong";
             this.Text = "Chi tiết lương";
             this.panel.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
@@ -878,7 +878,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGiaoVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbHSPCCV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbLuongCoBan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbiLuongCoBan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -918,7 +918,7 @@
         private DevComponents.Editors.DoubleInput dbLuong;
         private DevComponents.Editors.DoubleInput dbGiaoVien;
         private DevComponents.Editors.DoubleInput dbHSPCCV;
-        private DevComponents.Editors.DoubleInput dbLuongCoBan;
+        private DevComponents.Editors.DoubleInput dbiLuongCoBan;
         private DevComponents.DotNetBar.Controls.CheckBoxX checkGiaoVien;
         private DevComponents.DotNetBar.LabelX labelX14;
         private DevComponents.DotNetBar.LabelX labelX10;

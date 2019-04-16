@@ -31,20 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrinhDoNgoaiNgu));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.listViewExDanToc = new DevComponents.DotNetBar.Controls.ListViewEx();
+            this.lvTrinhDoNgoaiNgu = new DevComponents.DotNetBar.Controls.ListViewEx();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.itemThoat = new DevComponents.DotNetBar.ButtonX();
-            this.itemLuu = new DevComponents.DotNetBar.ButtonX();
-            this.itemXoa = new DevComponents.DotNetBar.ButtonX();
-            this.itemBoQua = new DevComponents.DotNetBar.ButtonX();
-            this.itemThemMoi = new DevComponents.DotNetBar.ButtonX();
+            this.btnThoat = new DevComponents.DotNetBar.ButtonX();
+            this.btnLuu = new DevComponents.DotNetBar.ButtonX();
+            this.btnXoa = new DevComponents.DotNetBar.ButtonX();
+            this.btnBoQua = new DevComponents.DotNetBar.ButtonX();
+            this.btnThem = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.txtTenTDNN = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtMaTDNN = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTenTrinhDoNgoaiNgu = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtMaTrinhDoNgoaiNgu = new DevComponents.DotNetBar.Controls.TextBoxX();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -77,7 +77,7 @@
             this.groupPanel1.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.listViewExDanToc);
+            this.groupPanel1.Controls.Add(this.lvTrinhDoNgoaiNgu);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
@@ -114,27 +114,27 @@
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "Danh Sách TĐ Ngoại Ngữ";
             // 
-            // listViewExDanToc
+            // lvTrinhDoNgoaiNgu
             // 
             // 
             // 
             // 
-            this.listViewExDanToc.Border.Class = "ListViewBorder";
-            this.listViewExDanToc.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.listViewExDanToc.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvTrinhDoNgoaiNgu.Border.Class = "ListViewBorder";
+            this.lvTrinhDoNgoaiNgu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lvTrinhDoNgoaiNgu.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.listViewExDanToc.DisabledBackColor = System.Drawing.Color.Empty;
-            this.listViewExDanToc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewExDanToc.FullRowSelect = true;
-            this.listViewExDanToc.GridLines = true;
-            this.listViewExDanToc.Location = new System.Drawing.Point(0, 0);
-            this.listViewExDanToc.MultiSelect = false;
-            this.listViewExDanToc.Name = "listViewExDanToc";
-            this.listViewExDanToc.Size = new System.Drawing.Size(290, 298);
-            this.listViewExDanToc.TabIndex = 2;
-            this.listViewExDanToc.UseCompatibleStateImageBehavior = false;
-            this.listViewExDanToc.View = System.Windows.Forms.View.Details;
+            this.lvTrinhDoNgoaiNgu.DisabledBackColor = System.Drawing.Color.Empty;
+            this.lvTrinhDoNgoaiNgu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvTrinhDoNgoaiNgu.FullRowSelect = true;
+            this.lvTrinhDoNgoaiNgu.GridLines = true;
+            this.lvTrinhDoNgoaiNgu.Location = new System.Drawing.Point(0, 0);
+            this.lvTrinhDoNgoaiNgu.MultiSelect = false;
+            this.lvTrinhDoNgoaiNgu.Name = "lvTrinhDoNgoaiNgu";
+            this.lvTrinhDoNgoaiNgu.Size = new System.Drawing.Size(290, 298);
+            this.lvTrinhDoNgoaiNgu.TabIndex = 2;
+            this.lvTrinhDoNgoaiNgu.UseCompatibleStateImageBehavior = false;
+            this.lvTrinhDoNgoaiNgu.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -150,11 +150,11 @@
             // 
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.Controls.Add(this.itemThoat);
-            this.groupPanel3.Controls.Add(this.itemLuu);
-            this.groupPanel3.Controls.Add(this.itemXoa);
-            this.groupPanel3.Controls.Add(this.itemBoQua);
-            this.groupPanel3.Controls.Add(this.itemThemMoi);
+            this.groupPanel3.Controls.Add(this.btnThoat);
+            this.groupPanel3.Controls.Add(this.btnLuu);
+            this.groupPanel3.Controls.Add(this.btnXoa);
+            this.groupPanel3.Controls.Add(this.btnBoQua);
+            this.groupPanel3.Controls.Add(this.btnThem);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupPanel3.Location = new System.Drawing.Point(0, 238);
@@ -190,56 +190,56 @@
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 1;
             // 
-            // itemThoat
+            // btnThoat
             // 
-            this.itemThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.itemThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemThoat.Location = new System.Drawing.Point(404, 21);
-            this.itemThoat.Name = "itemThoat";
-            this.itemThoat.Size = new System.Drawing.Size(56, 26);
-            this.itemThoat.TabIndex = 5;
-            this.itemThoat.Text = "Thoát";
-            this.itemThoat.Click += new System.EventHandler(this.itemThoat_Click);
+            this.btnThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThoat.Location = new System.Drawing.Point(404, 21);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(56, 26);
+            this.btnThoat.TabIndex = 5;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.itemThoat_Click);
             // 
-            // itemLuu
+            // btnLuu
             // 
-            this.itemLuu.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.itemLuu.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemLuu.Location = new System.Drawing.Point(257, 21);
-            this.itemLuu.Name = "itemLuu";
-            this.itemLuu.Size = new System.Drawing.Size(59, 26);
-            this.itemLuu.TabIndex = 3;
-            this.itemLuu.Text = "Lưu Lại";
+            this.btnLuu.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnLuu.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnLuu.Location = new System.Drawing.Point(257, 21);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(59, 26);
+            this.btnLuu.TabIndex = 3;
+            this.btnLuu.Text = "Lưu Lại";
             // 
-            // itemXoa
+            // btnXoa
             // 
-            this.itemXoa.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.itemXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemXoa.Location = new System.Drawing.Point(334, 21);
-            this.itemXoa.Name = "itemXoa";
-            this.itemXoa.Size = new System.Drawing.Size(59, 26);
-            this.itemXoa.TabIndex = 4;
-            this.itemXoa.Text = "Xóa";
+            this.btnXoa.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnXoa.Location = new System.Drawing.Point(334, 21);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(59, 26);
+            this.btnXoa.TabIndex = 4;
+            this.btnXoa.Text = "Xóa";
             // 
-            // itemBoQua
+            // btnBoQua
             // 
-            this.itemBoQua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.itemBoQua.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemBoQua.Location = new System.Drawing.Point(174, 21);
-            this.itemBoQua.Name = "itemBoQua";
-            this.itemBoQua.Size = new System.Drawing.Size(65, 26);
-            this.itemBoQua.TabIndex = 1;
-            this.itemBoQua.Text = "Bỏ Qua";
+            this.btnBoQua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnBoQua.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnBoQua.Location = new System.Drawing.Point(174, 21);
+            this.btnBoQua.Name = "btnBoQua";
+            this.btnBoQua.Size = new System.Drawing.Size(65, 26);
+            this.btnBoQua.TabIndex = 1;
+            this.btnBoQua.Text = "Bỏ Qua";
             // 
-            // itemThemMoi
+            // btnThem
             // 
-            this.itemThemMoi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.itemThemMoi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.itemThemMoi.Location = new System.Drawing.Point(96, 20);
-            this.itemThemMoi.Name = "itemThemMoi";
-            this.itemThemMoi.Size = new System.Drawing.Size(69, 26);
-            this.itemThemMoi.TabIndex = 2;
-            this.itemThemMoi.Text = "Thêm Mới";
+            this.btnThem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThem.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThem.Location = new System.Drawing.Point(96, 20);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(69, 26);
+            this.btnThem.TabIndex = 2;
+            this.btnThem.Text = "Thêm Mới";
             // 
             // groupPanel2
             // 
@@ -248,8 +248,8 @@
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.labelX2);
             this.groupPanel2.Controls.Add(this.labelX1);
-            this.groupPanel2.Controls.Add(this.txtTenTDNN);
-            this.groupPanel2.Controls.Add(this.txtMaTDNN);
+            this.groupPanel2.Controls.Add(this.txtTenTrinhDoNgoaiNgu);
+            this.groupPanel2.Controls.Add(this.txtMaTrinhDoNgoaiNgu);
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
@@ -310,30 +310,30 @@
             this.labelX1.TabIndex = 2;
             this.labelX1.Text = "Mã TĐ Ngoại Ngữ:";
             // 
-            // txtTenTDNN
+            // txtTenTrinhDoNgoaiNgu
             // 
             // 
             // 
             // 
-            this.txtTenTDNN.Border.Class = "TextBoxBorder";
-            this.txtTenTDNN.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTenTDNN.Location = new System.Drawing.Point(143, 60);
-            this.txtTenTDNN.Name = "txtTenTDNN";
-            this.txtTenTDNN.Size = new System.Drawing.Size(313, 20);
-            this.txtTenTDNN.TabIndex = 1;
+            this.txtTenTrinhDoNgoaiNgu.Border.Class = "TextBoxBorder";
+            this.txtTenTrinhDoNgoaiNgu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTenTrinhDoNgoaiNgu.Location = new System.Drawing.Point(143, 60);
+            this.txtTenTrinhDoNgoaiNgu.Name = "txtTenTrinhDoNgoaiNgu";
+            this.txtTenTrinhDoNgoaiNgu.Size = new System.Drawing.Size(313, 20);
+            this.txtTenTrinhDoNgoaiNgu.TabIndex = 1;
             // 
-            // txtMaTDNN
-            // 
-            // 
+            // txtMaTrinhDoNgoaiNgu
             // 
             // 
-            this.txtMaTDNN.Border.Class = "TextBoxBorder";
-            this.txtMaTDNN.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtMaTDNN.Enabled = false;
-            this.txtMaTDNN.Location = new System.Drawing.Point(143, 22);
-            this.txtMaTDNN.Name = "txtMaTDNN";
-            this.txtMaTDNN.Size = new System.Drawing.Size(313, 20);
-            this.txtMaTDNN.TabIndex = 0;
+            // 
+            // 
+            this.txtMaTrinhDoNgoaiNgu.Border.Class = "TextBoxBorder";
+            this.txtMaTrinhDoNgoaiNgu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtMaTrinhDoNgoaiNgu.Enabled = false;
+            this.txtMaTrinhDoNgoaiNgu.Location = new System.Drawing.Point(143, 22);
+            this.txtMaTrinhDoNgoaiNgu.Name = "txtMaTrinhDoNgoaiNgu";
+            this.txtMaTrinhDoNgoaiNgu.Size = new System.Drawing.Size(313, 20);
+            this.txtMaTrinhDoNgoaiNgu.TabIndex = 0;
             // 
             // frmTrinhDoNgoaiNgu
             // 
@@ -361,19 +361,19 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private DevComponents.DotNetBar.Controls.ListViewEx listViewExDanToc;
+        private DevComponents.DotNetBar.Controls.ListViewEx lvTrinhDoNgoaiNgu;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
-        private DevComponents.DotNetBar.ButtonX itemThoat;
-        private DevComponents.DotNetBar.ButtonX itemLuu;
-        private DevComponents.DotNetBar.ButtonX itemXoa;
-        private DevComponents.DotNetBar.ButtonX itemBoQua;
-        private DevComponents.DotNetBar.ButtonX itemThemMoi;
+        private DevComponents.DotNetBar.ButtonX btnThoat;
+        private DevComponents.DotNetBar.ButtonX btnLuu;
+        private DevComponents.DotNetBar.ButtonX btnXoa;
+        private DevComponents.DotNetBar.ButtonX btnBoQua;
+        private DevComponents.DotNetBar.ButtonX btnThem;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtTenTDNN;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtMaTDNN;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTenTrinhDoNgoaiNgu;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtMaTrinhDoNgoaiNgu;
     }
 }

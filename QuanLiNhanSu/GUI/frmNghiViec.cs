@@ -11,12 +11,11 @@ using DevComponents.DotNetBar;
 
 namespace QuanLiNhanSu.GUI
 {
-    public partial class frmChiTietLuong : Office2007Form
+    public partial class frmNghiViec : Office2007Form
     {
-        public frmChiTietLuong()
+        public frmNghiViec()
         {
             InitializeComponent();
         }
-
     }
 }

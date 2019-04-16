@@ -30,17 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangNhap));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.btThoat = new DevComponents.DotNetBar.ButtonX();
-            this.btDongY = new DevComponents.DotNetBar.ButtonX();
+            this.btnThoat = new DevComponents.DotNetBar.ButtonX();
+            this.btnDangNhap = new DevComponents.DotNetBar.ButtonX();
             this.lblNgayGio = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.txtMATKHAU = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.txtTAIKHOAN = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkBoxX1 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.chkLuuThongTinDangNhap = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.reflectionLabel2 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,8 +51,8 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.btThoat);
-            this.groupPanel1.Controls.Add(this.btDongY);
+            this.groupPanel1.Controls.Add(this.btnThoat);
+            this.groupPanel1.Controls.Add(this.btnDangNhap);
             this.groupPanel1.Controls.Add(this.lblNgayGio);
             this.groupPanel1.Controls.Add(this.groupPanel3);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
@@ -89,26 +90,26 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 1;
             // 
-            // btThoat
+            // btnThoat
             // 
-            this.btThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btThoat.Location = new System.Drawing.Point(345, 270);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(75, 23);
-            this.btThoat.TabIndex = 5;
-            this.btThoat.Text = "Đóng";
-            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            this.btnThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThoat.Location = new System.Drawing.Point(345, 270);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 5;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
-            // btDongY
+            // btnDangNhap
             // 
-            this.btDongY.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btDongY.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btDongY.Location = new System.Drawing.Point(254, 270);
-            this.btDongY.Name = "btDongY";
-            this.btDongY.Size = new System.Drawing.Size(75, 23);
-            this.btDongY.TabIndex = 4;
-            this.btDongY.Text = "Đồng ý";
+            this.btnDangNhap.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnDangNhap.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnDangNhap.Location = new System.Drawing.Point(254, 270);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(75, 23);
+            this.btnDangNhap.TabIndex = 4;
+            this.btnDangNhap.Text = "Đăng nhập";
             // 
             // lblNgayGio
             // 
@@ -128,12 +129,13 @@
             // 
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.Controls.Add(this.txtMATKHAU);
+            this.groupPanel3.Controls.Add(this.txtTenDangNhap);
+            this.groupPanel3.Controls.Add(this.txtMatKhau);
             this.groupPanel3.Controls.Add(this.txtTAIKHOAN);
             this.groupPanel3.Controls.Add(this.pictureBox1);
-            this.groupPanel3.Controls.Add(this.checkBoxX1);
-            this.groupPanel3.Controls.Add(this.labelX2);
             this.groupPanel3.Controls.Add(this.labelX1);
+            this.groupPanel3.Controls.Add(this.chkLuuThongTinDangNhap);
+            this.groupPanel3.Controls.Add(this.labelX2);
             this.groupPanel3.Controls.Add(this.reflectionLabel2);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Location = new System.Drawing.Point(3, 56);
@@ -169,16 +171,16 @@
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 1;
             // 
-            // txtMATKHAU
+            // txtMatKhau
             // 
-            this.txtMATKHAU.BackColor = System.Drawing.SystemColors.Info;
-            this.txtMATKHAU.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMATKHAU.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txtMATKHAU.Location = new System.Drawing.Point(154, 73);
-            this.txtMATKHAU.Name = "txtMATKHAU";
-            this.txtMATKHAU.PasswordChar = '*';
-            this.txtMATKHAU.Size = new System.Drawing.Size(242, 20);
-            this.txtMATKHAU.TabIndex = 1;
+            this.txtMatKhau.BackColor = System.Drawing.SystemColors.Info;
+            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtMatKhau.Location = new System.Drawing.Point(154, 73);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(242, 20);
+            this.txtMatKhau.TabIndex = 1;
             // 
             // txtTAIKHOAN
             // 
@@ -201,18 +203,18 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // checkBoxX1
+            // chkLuuThongTinDangNhap
             // 
-            this.checkBoxX1.BackColor = System.Drawing.Color.Transparent;
+            this.chkLuuThongTinDangNhap.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
-            this.checkBoxX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.checkBoxX1.Location = new System.Drawing.Point(154, 102);
-            this.checkBoxX1.Name = "checkBoxX1";
-            this.checkBoxX1.Size = new System.Drawing.Size(168, 33);
-            this.checkBoxX1.TabIndex = 8;
-            this.checkBoxX1.Text = "Lưu Thông Tin Đăng Nhập";
+            this.chkLuuThongTinDangNhap.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.chkLuuThongTinDangNhap.Location = new System.Drawing.Point(154, 102);
+            this.chkLuuThongTinDangNhap.Name = "chkLuuThongTinDangNhap";
+            this.chkLuuThongTinDangNhap.Size = new System.Drawing.Size(168, 33);
+            this.chkLuuThongTinDangNhap.TabIndex = 8;
+            this.chkLuuThongTinDangNhap.Text = "Lưu Thông Tin Đăng Nhập";
             // 
             // labelX2
             // 
@@ -226,20 +228,6 @@
             this.labelX2.Size = new System.Drawing.Size(75, 23);
             this.labelX2.TabIndex = 7;
             this.labelX2.Text = "Mật Khẩu:";
-            // 
-            // labelX1
-            // 
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(26, 47);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(86, 23);
-            this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
-            this.labelX1.TabIndex = 6;
-            this.labelX1.Text = "Tên Đăng Nhập:";
             // 
             // reflectionLabel2
             // 
@@ -255,6 +243,30 @@
             this.reflectionLabel2.TabIndex = 3;
             this.reflectionLabel2.Text = "<b><font size=\"+6\"><font color=\"#B02B2C\">                         Thông Tin Đăng " +
     "Nhập</font></font></b>";
+            // 
+            // labelX1
+            // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Location = new System.Drawing.Point(26, 45);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(91, 23);
+            this.labelX1.TabIndex = 7;
+            this.labelX1.Text = "Tên Đăng Nhập:";
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.BackColor = System.Drawing.SystemColors.Info;
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtTenDangNhap.Location = new System.Drawing.Point(154, 47);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.PasswordChar = '*';
+            this.txtTenDangNhap.Size = new System.Drawing.Size(242, 20);
+            this.txtTenDangNhap.TabIndex = 1;
             // 
             // frmDangNhap
             // 
@@ -278,16 +290,17 @@
         #endregion
 
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private DevComponents.DotNetBar.ButtonX btThoat;
-        private DevComponents.DotNetBar.ButtonX btDongY;
+        private DevComponents.DotNetBar.ButtonX btnThoat;
+        private DevComponents.DotNetBar.ButtonX btnDangNhap;
         private DevComponents.DotNetBar.Controls.ReflectionLabel lblNgayGio;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
-        public System.Windows.Forms.TextBox txtMATKHAU;
+        public System.Windows.Forms.TextBox txtMatKhau;
         public System.Windows.Forms.TextBox txtTAIKHOAN;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX1;
+        private DevComponents.DotNetBar.Controls.CheckBoxX chkLuuThongTinDangNhap;
         private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel2;
+        public System.Windows.Forms.TextBox txtTenDangNhap;
+        private DevComponents.DotNetBar.LabelX labelX1;
     }
 }
