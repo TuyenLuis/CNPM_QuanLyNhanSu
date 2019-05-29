@@ -324,5 +324,10 @@
   <ItemGroup>
     <None Include="Resources\Tpdkdesign.net-Refresh-Cl-Windows-View-Detail.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BusinessLogicLayer\" />
+    <Folder Include="DataAccessLayer\" />
+    <Folder Include="DataTransferObject\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
