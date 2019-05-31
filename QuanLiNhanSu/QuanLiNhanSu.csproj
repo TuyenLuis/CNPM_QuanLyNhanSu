@@ -49,7 +49,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogicLayer\BacLuongBUL.cs" />
+    <Compile Include="BusinessLogicLayer\ChucVuBUL.cs" />
+    <Compile Include="BusinessLogicLayer\HeSoLuongBUL.cs" />
+    <Compile Include="BusinessLogicLayer\KhenThuongBUL.cs" />
+    <Compile Include="BusinessLogicLayer\KyLuatBUL.cs" />
+    <Compile Include="BusinessLogicLayer\LuongNhanVienBUL.cs" />
+    <Compile Include="BusinessLogicLayer\NgachBUL.cs" />
+    <Compile Include="BusinessLogicLayer\NghiViecBUL.cs" />
+    <Compile Include="BusinessLogicLayer\NguoiDungBUL.cs" />
+    <Compile Include="BusinessLogicLayer\NhanVienBUL.cs" />
+    <Compile Include="BusinessLogicLayer\NhatKyBUL.cs" />
+    <Compile Include="BusinessLogicLayer\PhongBanBUL.cs" />
+    <Compile Include="BusinessLogicLayer\TrinhDoHocVanBUL.cs" />
+    <Compile Include="BusinessLogicLayer\TrinhDoNgoaiNguBUL.cs" />
+    <Compile Include="BusinessLogicLayer\TrinhDoTinHocBUL.cs" />
     <Compile Include="Common.cs" />
+    <Compile Include="DataAccessLayer\BacLuongDAL.cs" />
+    <Compile Include="DataAccessLayer\ChucVuDAL.cs" />
+    <Compile Include="DataAccessLayer\DataProvider.cs" />
+    <Compile Include="DataAccessLayer\HeSoLuongDAL.cs" />
+    <Compile Include="DataAccessLayer\KhenThuongDAL.cs" />
+    <Compile Include="DataAccessLayer\KyLuatDAL.cs" />
+    <Compile Include="DataAccessLayer\LuongNhanVienDAL.cs" />
+    <Compile Include="DataAccessLayer\NgachDAL.cs" />
+    <Compile Include="DataAccessLayer\NghiViecDAL.cs" />
+    <Compile Include="DataAccessLayer\NguoiDungDAL.cs" />
+    <Compile Include="DataAccessLayer\NhanVienDAL.cs" />
+    <Compile Include="DataAccessLayer\NhatKyDAL.cs" />
+    <Compile Include="DataAccessLayer\PhongBanDAL.cs" />
+    <Compile Include="DataAccessLayer\TrinhDoHocVanDAL.cs" />
+    <Compile Include="DataAccessLayer\TrinhDoNgoaiNguDAL.cs" />
+    <Compile Include="DataAccessLayer\TrinhDoTinHocDAL.cs" />
+    <Compile Include="DataTransferObject\BacLuongDTO.cs" />
+    <Compile Include="DataTransferObject\ChiTietKhenThuongDTO.cs" />
+    <Compile Include="DataTransferObject\ChiTietKyLuatDTO.cs" />
+    <Compile Include="DataTransferObject\ChiTietLuongDTO.cs" />
+    <Compile Include="DataTransferObject\ChucVuDTO.cs" />
+    <Compile Include="DataTransferObject\HeSoLuongDTO.cs" />
+    <Compile Include="DataTransferObject\KhenThuongDTO.cs" />
+    <Compile Include="DataTransferObject\KyLuatDTO.cs" />
+    <Compile Include="DataTransferObject\LuongCoBanDTO.cs" />
+    <Compile Include="DataTransferObject\NgachDTO.cs" />
+    <Compile Include="DataTransferObject\NghiViecDTO.cs" />
+    <Compile Include="DataTransferObject\NguoiDungDTO.cs" />
+    <Compile Include="DataTransferObject\NhanVienDTO.cs" />
+    <Compile Include="DataTransferObject\NhatKyDTO.cs" />
+    <Compile Include="DataTransferObject\PhongBanDTO.cs" />
+    <Compile Include="DataTransferObject\TrinhDoHocVanDTO.cs" />
+    <Compile Include="DataTransferObject\TrinhDoNgoaiNguDTO.cs" />
+    <Compile Include="DataTransferObject\TrinhDoTinHocDTO.cs" />
     <Compile Include="GUI\frmBac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +257,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogin.cs" />
     <EmbeddedResource Include="GUI\frmBac.resx">
       <DependentUpon>frmBac.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,10 +374,6 @@
   <ItemGroup>
     <None Include="Resources\Tpdkdesign.net-Refresh-Cl-Windows-View-Detail.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BusinessLogicLayer\" />
-    <Folder Include="DataAccessLayer\" />
-    <Folder Include="DataTransferObject\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

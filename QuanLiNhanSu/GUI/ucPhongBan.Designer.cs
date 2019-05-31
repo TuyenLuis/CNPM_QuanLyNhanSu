@@ -34,13 +34,13 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThoat = new DevComponents.DotNetBar.ButtonX();
             this.btnXoa = new DevComponents.DotNetBar.ButtonX();
             this.btnLuu = new DevComponents.DotNetBar.ButtonX();
             this.btnThem = new DevComponents.DotNetBar.ButtonX();
-            this.btnBoQua = new DevComponents.DotNetBar.ButtonX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -127,7 +127,8 @@
             this.lvPhongBan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader4});
             this.lvPhongBan.DisabledBackColor = System.Drawing.Color.Empty;
             this.lvPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvPhongBan.FullRowSelect = true;
@@ -139,6 +140,7 @@
             this.lvPhongBan.TabIndex = 2;
             this.lvPhongBan.UseCompatibleStateImageBehavior = false;
             this.lvPhongBan.View = System.Windows.Forms.View.Details;
+            this.lvPhongBan.SelectedIndexChanged += new System.EventHandler(this.lvPhongBan_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -154,7 +156,12 @@
             // 
             this.columnHeader3.Text = "Số nhân viên";
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 93;
+            this.columnHeader3.Width = 104;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Ghi chú";
+            this.columnHeader4.Width = 159;
             // 
             // groupPanel2
             // 
@@ -212,7 +219,6 @@
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnThem);
-            this.panel1.Controls.Add(this.btnBoQua);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 381);
             this.panel1.Name = "panel1";
@@ -239,6 +245,7 @@
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
@@ -249,26 +256,18 @@
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 3;
             this.btnLuu.Text = "Lưu Lại";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnThem
             // 
             this.btnThem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnThem.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnThem.Location = new System.Drawing.Point(379, 28);
+            this.btnThem.Location = new System.Drawing.Point(470, 29);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
             this.btnThem.TabIndex = 2;
             this.btnThem.Text = "Thêm Mới";
-            // 
-            // btnBoQua
-            // 
-            this.btnBoQua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnBoQua.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnBoQua.Location = new System.Drawing.Point(460, 29);
-            this.btnBoQua.Name = "btnBoQua";
-            this.btnBoQua.Size = new System.Drawing.Size(75, 23);
-            this.btnBoQua.TabIndex = 1;
-            this.btnBoQua.Text = "Bỏ Qua";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // labelX5
             // 
@@ -335,6 +334,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSoNhanVien.Location = new System.Drawing.Point(156, 97);
             this.txtSoNhanVien.Name = "txtSoNhanVien";
+            this.txtSoNhanVien.ReadOnly = true;
             this.txtSoNhanVien.Size = new System.Drawing.Size(722, 20);
             this.txtSoNhanVien.TabIndex = 13;
             // 
@@ -398,6 +398,6 @@
         private DevComponents.DotNetBar.ButtonX btnXoa;
         private DevComponents.DotNetBar.ButtonX btnLuu;
         private DevComponents.DotNetBar.ButtonX btnThem;
-        private DevComponents.DotNetBar.ButtonX btnBoQua;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

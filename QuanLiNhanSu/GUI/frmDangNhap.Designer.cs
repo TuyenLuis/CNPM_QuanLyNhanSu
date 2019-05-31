@@ -34,14 +34,14 @@
             this.btnDangNhap = new DevComponents.DotNetBar.ButtonX();
             this.lblNgayGio = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.txtTAIKHOAN = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.chkLuuThongTinDangNhap = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.reflectionLabel2 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -110,6 +110,7 @@
             this.btnDangNhap.Size = new System.Drawing.Size(75, 23);
             this.btnDangNhap.TabIndex = 4;
             this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // lblNgayGio
             // 
@@ -171,6 +172,16 @@
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 1;
             // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.BackColor = System.Drawing.SystemColors.Info;
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtTenDangNhap.Location = new System.Drawing.Point(154, 47);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(242, 20);
+            this.txtTenDangNhap.TabIndex = 1;
+            // 
             // txtMatKhau
             // 
             this.txtMatKhau.BackColor = System.Drawing.SystemColors.Info;
@@ -202,6 +213,19 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            // 
+            // labelX1
+            // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Location = new System.Drawing.Point(26, 45);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(91, 23);
+            this.labelX1.TabIndex = 7;
+            this.labelX1.Text = "Tên Đăng Nhập:";
             // 
             // chkLuuThongTinDangNhap
             // 
@@ -243,30 +267,6 @@
             this.reflectionLabel2.TabIndex = 3;
             this.reflectionLabel2.Text = "<b><font size=\"+6\"><font color=\"#B02B2C\">                         Thông Tin Đăng " +
     "Nhập</font></font></b>";
-            // 
-            // labelX1
-            // 
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(26, 45);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(91, 23);
-            this.labelX1.TabIndex = 7;
-            this.labelX1.Text = "Tên Đăng Nhập:";
-            // 
-            // txtTenDangNhap
-            // 
-            this.txtTenDangNhap.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(154, 47);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.PasswordChar = '*';
-            this.txtTenDangNhap.Size = new System.Drawing.Size(242, 20);
-            this.txtTenDangNhap.TabIndex = 1;
             // 
             // frmDangNhap
             // 

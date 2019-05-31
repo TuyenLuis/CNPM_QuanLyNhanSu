@@ -58,21 +58,39 @@ namespace QuanLiNhanSu.GUI
         private void frm_Main_Load(object sender, EventArgs e)
         {
             _frmMain = this;
-            //CreateTabDefault();
+            DisableControl();
             if (Common.frmDangNhap == null || Common.frmDangNhap.IsDisposed)
             {
                 Common.frmDangNhap = new frmDangNhap();
             }
             Common.frmDangNhap.ShowDialog();
+            if (UserLogin.TenDangNhap != "" && UserLogin.MaND != 0)
+            {
+                toolHienThi.Text = "Xin chào " + UserLogin.TenDangNhap + ". Chúc bạn 1 ngày làm việc tốt lành!";
+                buttonItemDangNhapVoiQuyen.Text = "Xin chào " + UserLogin.TenDangNhap;
+                CheckPhanQuyen();
+            }
+            else
+            {
+                DisableControl();
+            }
         }
 
         private void buttonItemTopChuyenSangTaiKhoanKhac_Click(object sender, EventArgs e)
         {
             toolHienThi.Text = "Chương trình đã đăng xuất....Bạn phải đăng nhập bằng 1 tài khoản khác.";
-            ribbonTabItemQuanTriHeThong.Enabled = false;
-            ribbonTabItemQuanLyNhanSu.Enabled = false;
-            ribbonTabItemTimKiemThongKe.Enabled = false;
-            ribbonTabItemTroGiup.Enabled = false;
+            UserLogin.TenDangNhap = "";
+            UserLogin.MaND = 0;
+            UserLogin.PhanQuyen = "";
+            DisableControl();
+        }
+
+        private void DisableControl()
+        {
+            //ribbonTabItemQuanTriHeThong.Enabled = false;
+            //ribbonTabItemQuanLyNhanSu.Enabled = false;
+            //ribbonTabItemTimKiemThongKe.Enabled = false;
+            //ribbonTabItemTroGiup.Enabled = false;
 
             btnItemChuyenSangTaiKhoanKhac.Enabled = false;
             btnItemDoiMatKhau.Enabled = false;
@@ -89,6 +107,86 @@ namespace QuanLiNhanSu.GUI
             buttonItemTopThongKeNhanVienTren40Tuoi.Enabled = false;
             buttonItemTopHDSuDung.Enabled = false;
             buttonItemTopLienHe.Enabled = false;
+            btnItemDangNhap.Enabled = true;
+        }
+
+        private void CheckPhanQuyen()
+        {
+            if (UserLogin.PhanQuyen == "TaiVu")
+            {
+                buttonItemTopBangLuongNhanVien.Enabled = true;
+                buttonItemTopNgach.Enabled = true;
+                buttonItemTopBac.Enabled = true;
+                buttonItemTopHeSoLuong.Enabled = true;
+                buttonItemTopHDSuDung.Enabled = true;
+                buttonItemTopLienHe.Enabled = true;
+                btnItemChuyenSangTaiKhoanKhac.Enabled = true;
+                btnItemDangNhap.Enabled = false;
+                btnItemDoiMatKhau.Enabled = true;
+                btnItemPhanQuyenNguoiDung.Enabled = false;
+                btnItemHoSoNhanVien.Enabled = false;
+                btnItemDanhSachPhongBan.Enabled = false;
+                btnItemDanhSachDanhMuc.Enabled = false;
+                buttonItemTopTimKiemNhanVien.Enabled = false;
+                buttonItemTopThongKeNhanVien.Enabled = false;
+                buttonItemTopThongKeNhanVienTren40Tuoi.Enabled = false;
+            }
+            else if (UserLogin.PhanQuyen == "ToChuc")
+            {
+                buttonItemTopBangLuongNhanVien.Enabled = false;
+                buttonItemTopNgach.Enabled = false;
+                buttonItemTopBac.Enabled = false;
+                buttonItemTopHeSoLuong.Enabled = false;
+                buttonItemTopHDSuDung.Enabled = true;
+                buttonItemTopLienHe.Enabled = true;
+                btnItemChuyenSangTaiKhoanKhac.Enabled = true;
+                btnItemDangNhap.Enabled = false;
+                btnItemDoiMatKhau.Enabled = true;
+                btnItemPhanQuyenNguoiDung.Enabled = false;
+                btnItemHoSoNhanVien.Enabled = true;
+                btnItemDanhSachPhongBan.Enabled = true;
+                btnItemDanhSachDanhMuc.Enabled = true;
+                buttonItemTopTimKiemNhanVien.Enabled = true;
+                buttonItemTopThongKeNhanVien.Enabled = true;
+                buttonItemTopThongKeNhanVienTren40Tuoi.Enabled = true;
+            }
+            else if (UserLogin.PhanQuyen == "QuanTri")
+            {
+                buttonItemTopBangLuongNhanVien.Enabled = false;
+                buttonItemTopNgach.Enabled = false;
+                buttonItemTopBac.Enabled = false;
+                buttonItemTopHeSoLuong.Enabled = false;
+                buttonItemTopHDSuDung.Enabled = true;
+                buttonItemTopLienHe.Enabled = true;
+                btnItemChuyenSangTaiKhoanKhac.Enabled = true;
+                btnItemDangNhap.Enabled = false;
+                btnItemDoiMatKhau.Enabled = true;
+                btnItemPhanQuyenNguoiDung.Enabled = true;
+                btnItemHoSoNhanVien.Enabled = false;
+                btnItemDanhSachPhongBan.Enabled = false;
+                btnItemDanhSachDanhMuc.Enabled = false;
+                buttonItemTopTimKiemNhanVien.Enabled = true;
+                buttonItemTopThongKeNhanVien.Enabled = true;
+                buttonItemTopThongKeNhanVienTren40Tuoi.Enabled = true;
+            } else
+            {
+                buttonItemTopBangLuongNhanVien.Enabled = true;
+                buttonItemTopNgach.Enabled = false;
+                buttonItemTopBac.Enabled = false;
+                buttonItemTopHeSoLuong.Enabled = false;
+                buttonItemTopHDSuDung.Enabled = true;
+                buttonItemTopLienHe.Enabled = true;
+                btnItemChuyenSangTaiKhoanKhac.Enabled = true;
+                btnItemDangNhap.Enabled = false;
+                btnItemDoiMatKhau.Enabled = true;
+                btnItemPhanQuyenNguoiDung.Enabled = false;
+                btnItemHoSoNhanVien.Enabled = true;
+                btnItemDanhSachPhongBan.Enabled = false;
+                btnItemDanhSachDanhMuc.Enabled = false;
+                buttonItemTopTimKiemNhanVien.Enabled = false;
+                buttonItemTopThongKeNhanVien.Enabled = false;
+                buttonItemTopThongKeNhanVienTren40Tuoi.Enabled = false;
+            }
         }
 
         private void buttonItemTopDangNhap_Click(object sender, EventArgs e)
@@ -311,6 +409,16 @@ namespace QuanLiNhanSu.GUI
             panel.Controls.Add(Common.ucTraCuuNhanVien);
             Common.ucTraCuuNhanVien.Dock = DockStyle.Fill;
             Common.ucTraCuuNhanVien.BringToFront();
+        }
+
+        private void buttonItemMenuDangNhap_Click(object sender, EventArgs e)
+        {
+            RemoveAllTabItems();
+            if (Common.frmDangNhap == null || Common.frmDangNhap.IsDisposed)
+            {
+                Common.frmDangNhap = new frmDangNhap();
+            }
+            Common.frmDangNhap.ShowDialog();
         }
     }
 }
